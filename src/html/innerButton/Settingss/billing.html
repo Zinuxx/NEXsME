@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXsME</title>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Add your custom CSS file -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../../../js/operation.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>    
+
+<body class="bg-gray-300 w-full p-8"> 
+    <section>
+        <div class="container">
+                                <!-- ==> navbar1 <== -->
+            <div id="navbar1" class="flex bg-gray-600 justify-between items-center w-100 h-[10vh] -mt-9">
+                <div class="logo">
+                    <div class=" inline-flex px-9 w-100 justify-between h-[10vh] bg-gray-600 items-center">
+                        <ul class="">    
+                            <li><a href="../../setting.html"><i class="fa-solid fa-arrow-left"></i></a></li>
+                        </ul>
+                        <p class="text-orange-400 ml-3"><a href="../../operations.html">NEX<span style="color: white;">sME <img src="" alt=""></span></a></p>
+                        
+                        <!-- <div class="dropdownMenu justify-between items-start relative"> -->
+                        <div class="dropdownMenu justify-between items-center relative flex">
+                            <!-- <button data-dropdown-toggle="dropdown" class=" text-black py-2 px-4 rounded cursor-pointer relative" onclick="drop()">NEXsME<img class="w-16" src="../image/img.jpg"> -->
+                            <button class="px-10 px-4 text-black py-2 rounded cursor-pointer relative" onclick="drop()">
+                                <svg class="text-white h-3 w-3 absolute right-2 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+
+                            <div id="arrow" class="divide-y hidden absolute bg-yellow-50 shadow-md mt-2 py-2 px-4 divide-x divide-gray-300 top-full">
+                                <div class="flex">
+                                            <!-- First column -->
+                                    <div class="pr-4 border-r border-gray-300">
+                                        <p class="font-bold">Apps Catalog:</p>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Simple Sale</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Simple Purchase</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Simple Inventory Management</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Product Master</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Business Reports</a>
+                                    </div>
+                
+                                                <!-- Second column -->
+                                    <div class="pl-4">
+                                        <p class="font-bold">App List:</p>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Quick Sale</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Quick Keys</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Open/Close</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Promotion</a>
+                                    </div>
+                                    <div class="pl-4 text-sm">
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Sale History</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Customer</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Stock Overview</a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <ul class="flex">
+                        <li class="mx-5"><a href="../../notification.html"><i class="fa-solid fa-bell"></i></a></li>
+                        <li class="mx-5"><a href="../../setting.html"><i class="fa-solid fa-gear"></i></a></li>
+                        <li class="mx-5"><a href="../../src/html/user.html"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ==> Navbar 2 <== -->
+            <div class="navbar2 bg-white h-[10vh] w-auto pt-4 flex">
+                <p class="mx-5">Billing and Subscription</p>
+            </div>    
+
+            <!-- ==> content <==  -->
+            <div class="content mt-3 bg-white p-4">
+                <div class="">
+                    <p class="font-bold">Customer ID: 123456789</p>
+                    <p class="font-bold">Payment Method: VISA</p>
+                </div>
+                <div class="plan sm:w-96 sm:h-screen sm:mt-3">
+                    <div class="out bg-red-400 sm:pt-2 sm:w-80 sm:h-68">
+                        <div class="in bg-blue-200 sm:p-1 sm:pl-5 sm:w-80 sm:h-68">
+                            <p class="text-purple-600 sm:text-xl">Basic Plan</p>
+                            <p class="text-blue-600">Subscribed <span class="text-black">Next charge on 01.01.2023</span></p>
+                            <p class="sm:text-2xl font-bold text-white">$300/yr</p>
+                            <p>+application tax</p>
+                            <p class="text-blue-600">Downgrade your plan</p>
+                            <p class="text-blue-600">View payment history</p>
+                            <p class="text-blue-600">Cancel subscription</p>
+                            <p class="text-blue-600">Switch to monthly billing</p>
+                            <p class="text-blue-600">View Our Pricing Plans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body> 
+</html>

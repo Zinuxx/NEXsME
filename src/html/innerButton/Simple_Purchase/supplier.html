@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXsME</title>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Add your custom CSS file -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../../src/js/operation.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>        
+<body class="bg-gray-300 w-full p-8">
+    <section>
+        <div class="container">
+                                <!-- ==> navbar1 <== -->
+            <div id="navbar1" class="flex bg-gray-600 justify-between items-center w-100 h-[10vh] -mt-9">
+                <div class="logo">
+                    <div class=" inline-flex px-9 w-100 justify-between h-[10vh] bg-gray-600 items-center">
+                        <ul class="">    
+                            <li><a href="../../operations.html"><i class="fa-solid fa-arrow-left"></i></a></li>
+                        </ul>
+                        <p class="text-orange-400 ml-3"><a href="../../src/html/operations.html">NEX<span style="color: white;">sME <img src="" alt=""></span></a></p>
+                        
+                        <!-- <div class="dropdownMenu justify-between items-start relative"> -->
+                        <div class="dropdownMenu justify-between items-center relative flex">
+                            <!-- <button data-dropdown-toggle="dropdown" class=" text-black py-2 px-4 rounded cursor-pointer relative" onclick="drop()">NEXsME<img class="w-16" src="../image/img.jpg"> -->
+                            <button class="px-10 px-4 text-black py-2 rounded cursor-pointer relative" onclick="drop()">
+                                <svg class="text-white h-3 w-3 absolute right-2 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+
+                            <div id="arrow" class="divide-y hidden absolute bg-yellow-50 shadow-md mt-2 py-2 px-4 divide-x divide-gray-300 top-full">
+                                <div class="flex">
+                                            <!-- First column -->
+
+                                    <div class="pr-4 border-r border-gray-300">
+                                        <p class="font-bold">Apps Catalog:</p>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Simple Sale</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Simple Purchase</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Simple Inventory Management</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Product Master</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Business Reports</a>
+                                    </div>
+                
+                                                <!-- Second column -->
+                                    <div class="pl-4">
+                                        <p class="font-bold">App List:</p>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Quick Sale</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Quick Keys</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Open/Close</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Promotion</a>
+                                    </div>
+                                    <div class="pl-4 text-sm">
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Sale History</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Customer</a>
+                                        <a href="#" class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200">Stock Overview</a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <ul class="flex">
+                        <li class="mx-5"><a href="../../notification.html"><i class="fa-solid fa-bell"></i></a></li>
+                        <li class="mx-5"><a href="../../setting.html"><i class="fa-solid fa-gear"></i></a></li>
+                        <li class="mx-5"><a href="../../user.html"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </div>  
+            </div>
+            <!-- ==> Navbar 2 <== -->
+            <div class="navbar2 bg-white h-[10vh] w-auto pt-4 flex">
+                <ul class="flex">
+                    <li class="mx-5"><a href="../../overview.html">Overview</a></li>
+                    <li class="mx-5"><a href="../../operations.html">Operations</a></li>
+                </ul>
+            </div>    
+
+            <!-- ==> content <==  -->
+            <div class="content mt-3">
+                        <!-- ==> Row 1 <== -->
+                <div class="ss bg-white mb-3 w-full h-40">
+                    <p class="ml-5 text-xl text-body font-sans">Supplier Master</p>
+                    <ul class="flex items-center text-sm">
+                        <li class="mt-5 w-24 h-20 border mx-5 bg-gray-50 border-green-500 rounded-md"><a href="supplierButton/supp.html">Supplier <i class="fas fa-user pt-8 pl-16 text-xl" aria-hidden="true"></i></a></li>
+                        <li class="mt-5 w-24 h-20 border mx-5 bg-gray-50 border-green-500 rounded-md"><a href="supplierButton/suppGroup.html">Supplier Group <i class="fas fa-user pt-8 pl-16 text-xl"></i></a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+    </section>
+</body> 
+</html>

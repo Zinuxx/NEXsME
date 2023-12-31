@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXsME</title>
+    <link rel="icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!-- Add your custom CSS file -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="../../../js/operation.js"></script>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body class="bg-gray-300 w-full p-8">
+    <section>
+      <div class="container">
+        <!-- ==> navbar1 <== -->
+        <div
+          id="navbar1"
+          class="flex bg-gray-600 justify-between items-center w-100 h-[10vh] -mt-9"
+        >
+          <div class="logo">
+            <div
+              class="inline-flex px-9 w-100 justify-between h-[10vh] bg-gray-600 items-center"
+            >
+              <ul class="">
+                <li>
+                  <a href="../../setting.html"
+                    ><i class="fa-solid fa-arrow-left"></i
+                  ></a>
+                </li>
+              </ul>
+              <p class="text-orange-400 ml-3">
+                <a href="../../operations.html"
+                  >NEX<span style="color: white">sME <img src="" alt="" /></span
+                ></a>
+              </p>
+
+              <!-- <div class="dropdownMenu justify-between items-start relative"> -->
+              <div
+                class="dropdownMenu justify-between items-center relative flex"
+              >
+                <!-- <button data-dropdown-toggle="dropdown" class=" text-black py-2 px-4 rounded cursor-pointer relative" onclick="drop()">NEXsME<img class="w-16" src="../image/img.jpg"> -->
+                <button
+                  class="px-10 px-4 text-black py-2 rounded cursor-pointer relative"
+                  onclick="drop()"
+                >
+                  <svg
+                    class="text-white h-3 w-3 absolute right-2 top-1/2 transform -translate-y-1/2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div
+                  id="arrow"
+                  class="divide-y hidden absolute bg-yellow-50 shadow-md mt-2 py-2 px-4 divide-x divide-gray-300 top-full"
+                >
+                  <div class="flex">
+                    <!-- First column -->
+
+                    <div class="pr-4 border-r border-gray-300">
+                      <p class="font-bold">Apps Catalog:</p>
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Simple Sale</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Simple Purchase</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Simple Inventory Management</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Product Master</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Business Reports</a
+                      >
+                    </div>
+
+                    <!-- Second column -->
+                    <div class="pl-4">
+                      <p class="font-bold">App List:</p>
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Quick Sale</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Quick Keys</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Open/Close</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Promotion</a
+                      >
+                    </div>
+                    <div class="pl-4 text-sm">
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Sale History</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Customer</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm block py-2 px-4 text-gray-700 hover:bg-gray-200"
+                        >Stock Overview</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="icon">
+            <ul class="flex">
+              <li class="mx-5">
+                <a href="../../../notification.html"
+                  ><i class="fa-solid fa-bell"></i
+                ></a>
+              </li>
+              <li class="mx-5">
+                <a href="../../../setting.html"
+                  ><i class="fa-solid fa-gear"></i
+                ></a>
+              </li>
+              <li class="mx-5">
+                <a href="../../../user.html"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ==> Navbar 2 <== -->
+        <div class="navbar2 bg-white h-[10vh] w-auto pt-4 flex">
+          <p class="ml-3">General</p>
+          <div class="button ml-4">
+            <button class="border-l border-black mx-1 pl-1">
+              <i class="fa fa-add text-lg"></i>
+            </button>
+            <button class="mx-1"><i class="fa fa-edit text-lg"> </i></button>
+            <button class="mx-1"><i class="fa fa-save text-lg"> </i></button>
+            <button class="mx-1"><i class="fa fa-close text-lg"> </i></button>
+            <button class="border-l border-black mx-1 pl-1">
+              <i class="fa fa-print text-lg"> </i>
+            </button>
+            <button class="mx-1"><i class="fa fa-share text-lg"> </i></button>
+            <button class="mx-1"><i class="fa fa-share text-lg"> </i></button>
+            <button class="border-l border-black mx-1 pl-1">
+              <i class="fa fa-trash text-lg"> </i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ==> content <==  -->
+        <div class="content mt-3 bg-white p-4">
+          <div class="p-1 mt-3">
+            <div class="flex gap-3">
+              <div class="">
+                <label for="">Store Name:</label><br />
+                <input
+                  class="border border-blue-600 w-96"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Default Currency:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Default Sale Tax:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="">
+                <label for="">Private URL:</label><br />
+                <input
+                  class="border border-blue-600 w-96"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Time Zone:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="datetime-local"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="information border border-black mt-2 p-3">
+            <div class="nav flex">
+              <ul class="flex  border border-black">
+                <li class="h-8 p-1 border border-black bg-gray-200"><a href="general.html">Address and Communication</a></li>
+                <li class="h-8 p-1 border border-black bg-gray-200"><a href="General/contact.html">Contact</a></li>
+                <li class="h-8 p-1 border border-black bg-gray-200"><a href="General/delivaryAddr.html">Delivery Address</a></li>
+              </ul>
+            </div>
+            <details></details>
+            <textarea
+              class="border border-black"
+              name=""
+              id=""
+              cols="70"
+              rows="10"
+            ></textarea>
+
+            <div class="flex gap-3">
+              <div class="">
+                <label for="">Postal Code:</label><br />
+                <input
+                  class="border border-blue-600 w-96"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">City:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">State:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="">
+                <label for="">Country:</label><br />
+                <input
+                  class="border border-blue-600 w-96"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Phone:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Mobile:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="">
+                <label for="">Fax:</label><br />
+                <input
+                  class="border border-blue-600 w-96"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Website:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="">
+                <label for="">Email:</label><br />
+                <input
+                  class="border border-blue-600 w-72"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
